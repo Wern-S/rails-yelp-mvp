@@ -1,0 +1,19 @@
+<div class="container">
+<h1> Please fill the form </h1>
+
+
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+
+  <%= f.input :address %>
+
+  <%= f.input :category %>
+
+  <%= f.button :submit, class: "btn-primary" %>
+
+<% end %>
+
+  <h4 class="btn btn-danger mt-3"> <%= link_to 'cancel', restaurants_path %> </h4>
+</div>
